@@ -1,9 +1,9 @@
 import lib as l 
 from tqdm import tqdm
 
-country_data_folder = '~/open_st_map/country_data/'
-country_df_folder = '~/open_st_map/country_dfs/'
-codebook_folder = '~/open_st_map/country_codebooks/' 
+country_data_folder = '/home/dylan/open_st_map/country_data/'
+country_df_folder = '/home/dylan/open_st_map/country_dfs/'
+codebook_folder = '/home/dylan/open_st_map/country_codebooks/' 
 
 input = [{'country_name':'Belarus',
           'region_admin_level':'4', 
