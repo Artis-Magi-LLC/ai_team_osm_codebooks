@@ -44,7 +44,9 @@ def create_country_df(osm_file, output_path = '', save = True):
 def create_osm_codebook(country_df, region_admin_level, country_name = '', use_country_index = False, country_index = None, name_columns = None, convert = False): 
     if convert:
         country_df['geometry'] = country_df['geo'].apply(wkt.loads) 
-        
+    else: 
+        country_df['geometry'] = country_df['geo']
+
     country_gdf = gpd.GeoDataFrame(country_df, crs='epsg:4326')
     if use_country_index: 
         country_geometry = country_gdf.loc[country_index, 'geometry']
