@@ -56,7 +56,7 @@ for country in input:
     country_name = country['country_name']
     filename = country['filename']
     print("processing {}".format(country_name))
-    with open(country_data_folder+filename, 'rb') as f: 
+    with open(country_data_folder+filename, 'r') as f: 
 
         country_df = l.create_country_df(f, country_df_folder+country_name.lower()+'country_df.csv')
         codebook = l.create_osm_codebook(country_df, country['region_admin_level'], country_name = country_name)
