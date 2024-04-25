@@ -19,44 +19,39 @@ codebook_folder = '/home/dylan/open_st_map/country_codebooks/'
 #         'region_admin_level': '4',
 #        'filename': 'burkina-faso-latest.osm.pbf'}
 #
-{'country_name' : 'Democratic Republic of the Congo',
-          'region_admin_level': '4',
-          'filename': 'congo-democratic-republic-latest.osm.pbf'},
-{'country_name' : 'Egypt',
-          'region_admin_level': '4',
-          'filename': 'egypt-latest.osm.pbf'},
-{'country_name' : 'Georgia',
-          'region_admin_level': '4',
-          'filename': 'georgia-latest.osm.pbf'},
-{'country_name' : 'Ghana',
-          'region_admin_level': '4',
-          'filename': 'ghana-latest.osm.pbf'},
-{'country_name' : 'Kenya',
-          'region_admin_level': '4',
-          'filename': 'kenya-latest.osm.pbf'},
-{'country_name' : 'Libya',
-          'region_admin_level': '4',
-          'filename': 'libya-latest.osm.pbf'},
-{'country_name' : 'Moldova',
-          'region_admin_level': '4',
-          'filename': 'moldova-latest.osm.pbf'},
-{'country_name' : 'Somalia',
-          'region_admin_level': '5',
-          'filename': 'somalia-latest.osm.pbf'}
+# {'country_name' : 'Democratic Republic of the Congo',
+#           'region_admin_level': '4',
+#           'filename': 'congo-democratic-republic-latest.osm.pbf'},
+# {'country_name' : 'Egypt',
+#           'region_admin_level': '4',
+#           'filename': 'egypt-latest.osm.pbf'},
+# {'country_name' : 'Georgia',
+#           'region_admin_level': '4',
+#           'filename': 'georgia-latest.osm.pbf'},
+# {'country_name' : 'Ghana',
+#           'region_admin_level': '4',
+#           'filename': 'ghana-latest.osm.pbf'},
+# {'country_name' : 'Kenya',
+#           'region_admin_level': '4',
+#           'filename': 'kenya-latest.osm.pbf'},
+# {'country_name' : 'Libya',
+#           'region_admin_level': '4',
+#           'filename': 'libya-latest.osm.pbf'},
+# {'country_name' : 'Moldova',
+#           'region_admin_level': '4',
+#           'filename': 'moldova-latest.osm.pbf'},
+# {'country_name' : 'Somalia',
+#           'region_admin_level': '5',
+#           'filename': 'somalia-latest.osm.pbf'}
 
-#{'country_name' : 'Romania',
+# {'country_name' : 'Romania',
 #          'region_admin_level': '6',
 #          'filename': 'romania-latest.osm.pbf'}
 input = [
-         {'country_name': 'Tanzania',
-          'region_admin_level': '4',
-          'filename':'tanzania-latest.osm.pbf'},
-         {'country_name' : 'Burkina Faso',
-          'region_admin_level': '4',
-          'filename': 'burkina-faso-latest.osm.pbf'},
-         {'country_name' : 'Iraq',
-          'region_admin_level': '4',
-          'filename': 'iraq-latest.osm.pbf'}]
+    {'country_name' : 'Romania',
+         'region_admin_level': '4',
+         'filename': 'romania-latest.osm.pbf'}
+         ]
 
 for country in input: 
 
