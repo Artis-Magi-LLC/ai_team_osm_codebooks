@@ -88,7 +88,7 @@ def create_osm_codebook(country_df, region_admin_level, country_name = '', count
     if name_columns != None: 
         pass 
     else: 
-        name_columns = ['ISO3166-1','ISO3166-1:alpha2', 'ISO3166-1:alpha3', 'ISO3166-1:numeric', 'ISO3166-2'] + [i for i in country_gdf.columns if ('name' in i) and (i != 'Unnamed: 0')]
+        name_columns =  ['ISO3166-2'] + [i for i in country_gdf.columns if ('name' in i) and (i != 'Unnamed: 0')]
     
     regions_ = in_country_gdf[in_country_gdf['admin_level'] == region_admin_level]
     regions = regions_.dropna(subset = ['ISO3166-2'])
