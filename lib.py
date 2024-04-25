@@ -22,14 +22,16 @@ class AdminAreaHandler(osmium.SimpleHandler):
 
     def area(self, a):            
         if  "admin_level" in a.tags:
-
-            wkbshape = self.wkbfab.create_multipolygon(a)
-            shapely_obj = shapely.wkb.loads(wkbshape, hex=True)
-            
-            area = { "id": a.id, "geo": shapely_obj }
-            area = merge_two_dicts(area, a.tags)
-            
-            self.areas.append(area)
+            try:
+                wkbshape = self.wkbfab.create_multipolygon(a)
+                shapely_obj = shapely.wkb.loads(wkbshape, hex=True)
+                
+                area = { "id": a.id, "geo": shapely_obj }
+                area = merge_two_dicts(area, a.tags)
+                
+                self.areas.append(area)
+            except: 
+                pass
 
 #lib
 
