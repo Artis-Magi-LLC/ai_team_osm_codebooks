@@ -18,6 +18,9 @@ codebook_folder = '/home/dylan/open_st_map/country_codebooks/'
 #        {'country_name' : 'Burkina Faso',
 #         'region_admin_level': '4',
 #        'filename': 'burkina-faso-latest.osm.pbf'}
+#{'country_name' : 'Iraq',
+#        'region_admin_level': '4',
+#       'filename': 'iraq-latest.osm.pbf'}
 input = [
          {'country_name' : 'Democratic Republic of the Congo',
           'region_admin_level': '4',
@@ -31,9 +34,6 @@ input = [
          {'country_name' : 'Ghana',
           'region_admin_level': '4',
           'filename': 'ghana-latest.osm.pbf'},
-         {'country_name' : 'Iraq',
-          'region_admin_level': '4',
-          'filename': 'iraq-latest.osm.pbf'},
          {'country_name' : 'Kenya',
           'region_admin_level': '4',
           'filename': 'kenya-latest.osm.pbf'},
