@@ -59,7 +59,7 @@ def create_osm_codebook(country_df, region_admin_level, country_name = '', count
             print("Number of country rows matching name {}".format(len(matching_countries)))
             return ''
         else:
-            country_geometry = matching_countries['geometry']
+            country_geometry = matching_countries.loc[matching_countries.index[0], 'geometry']
 
     country_indicies = [] 
     for i in country_gdf.index: 
