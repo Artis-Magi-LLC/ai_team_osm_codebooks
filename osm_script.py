@@ -14,10 +14,11 @@ codebook_folder = '/home/dylan/open_st_map/country_codebooks/'
 # {'country_name' : 'Bulgaria',
 #           'region_admin_level': '6',
 #           'filename': 'bulgaria-latest.osm.pbf'}
+
+#        {'country_name' : 'Burkina Faso',
+#         'region_admin_level': '4',
+#        'filename': 'burkina-faso-latest.osm.pbf'}
 input = [
-         {'country_name' : 'Burkina Faso',
-          'region_admin_level': '4',
-          'filename': 'burkina-faso-latest.osm.pbf'},
          {'country_name' : 'Democratic Republic of the Congo',
           'region_admin_level': '4',
           'filename': 'congo-democratic-republic-latest.osm.pbf'},
