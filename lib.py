@@ -43,7 +43,7 @@ def create_country_df(osm_file, output_path = '', save = True):
         df.to_csv(output_path) 
     return df
 
-def create_osm_codebook(country_df, region_admin_level, country_name = '', use_country_index = False, country_index = None, name_columns = None, convert = False): 
+def create_osm_codebook(country_df, region_admin_level, country_name = '', country_name_column = 'name:en', use_country_index = False, country_index = None, name_columns = None, convert = False): 
     if convert:
         country_df['geometry'] = country_df['geo'].apply(wkt.loads) 
     else: 
@@ -54,7 +54,7 @@ def create_osm_codebook(country_df, region_admin_level, country_name = '', use_c
         country_geometry = country_gdf.loc[country_index, 'geometry']
     else: 
         countries = country_gdf[country_gdf['admin_level'] =='2']
-        matching_countries = countries[countries['name'] == country_name]
+        matching_countries = countries[countries[country_name_column] == country_name]
         if len(matching_countries) != 1:
             print("Number of country rows matching name {}".format(len(matching_countries)))
             return ''
