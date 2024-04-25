@@ -52,22 +52,38 @@ def create_osm_codebook(country_df, region_admin_level, country_name = '', count
     country_gdf = gpd.GeoDataFrame(country_df, crs='epsg:4326')
     if use_country_index: 
         country_geometry = country_gdf.loc[country_index, 'geometry']
+
+        country_indicies = [] 
+        for i in country_gdf.index: 
+            geometry = country_gdf.loc[i, 'geometry'] 
+            if geometry.within(country_geometry): 
+                country_indicies.append(i) 
+
+        in_country_gdf = country_gdf.loc[country_indicies, :]
     else: 
         countries = country_gdf[country_gdf['admin_level'] =='2']
-        matching_countries = countries[countries[country_name_column] == country_name]
-        if len(matching_countries) != 1:
-            print("Number of country rows matching name {}".format(len(matching_countries)))
-            return ''
-        else:
-            country_geometry = matching_countries.loc[matching_countries.index[0], 'geometry']
 
-    country_indicies = [] 
-    for i in country_gdf.index: 
-        geometry = country_gdf.loc[i, 'geometry'] 
-        if geometry.within(country_geometry): 
-            country_indicies.append(i) 
+        if len(countries) == 0: 
+            in_country_gdf = country_gdf
+        
+        else: 
 
-    in_country_gdf = country_gdf.loc[country_indicies, :]
+            matching_countries = countries[countries[country_name_column] == country_name]
+            if len(matching_countries) != 1:
+                print("Number of country rows matching name {}".format(len(matching_countries)))
+                return ''
+            else:
+                country_geometry = matching_countries.loc[matching_countries.index[0], 'geometry']
+
+                country_indicies = [] 
+                for i in country_gdf.index: 
+                    geometry = country_gdf.loc[i, 'geometry'] 
+                    if geometry.within(country_geometry): 
+                        country_indicies.append(i) 
+
+                in_country_gdf = country_gdf.loc[country_indicies, :]
+
+    
 
     if name_columns != None: 
         pass 

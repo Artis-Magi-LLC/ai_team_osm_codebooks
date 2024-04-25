@@ -5,15 +5,16 @@ country_data_folder = '/home/dylan/open_st_map/country_data/'
 country_df_folder = '/home/dylan/open_st_map/country_dfs/'
 codebook_folder = '/home/dylan/open_st_map/country_codebooks/' 
 
-input = [{'country_name':'Belarus',
-          'region_admin_level':'4', 
-          'filename': 'belarus-latest.osm.pbf'},
-         {'country_name':'Bosnia and Herzegovina',
-          'region_admin_level' : '4',
-          'filename': 'bosnia-herzegovina-latest.osm.pbf'},
-         {'country_name' : 'Bulgaria',
-          'region_admin_level': '6',
-          'filename': 'bulgaria-latest.osm.pbf'},
+# {'country_name':'Belarus',
+#           'region_admin_level':'4', 
+#           'filename': 'belarus-latest.osm.pbf'},
+# {'country_name':'Bosnia and Herzegovina',
+#           'region_admin_level' : '4',
+#           'filename': 'bosnia-herzegovina-latest.osm.pbf'}
+# {'country_name' : 'Bulgaria',
+#           'region_admin_level': '6',
+#           'filename': 'bulgaria-latest.osm.pbf'}
+input = [
          {'country_name' : 'Burkina Faso',
           'region_admin_level': '4',
           'filename': 'burkina-faso-latest.osm.pbf'},
@@ -33,8 +34,8 @@ input = [{'country_name':'Belarus',
           'region_admin_level': '4',
           'filename': 'iraq-latest.osm.pbf'},
          {'country_name' : 'Kenya',
-          'region_admin_level': 'kenya-latest.osm.pbf',
-          'filename': '4'},
+          'region_admin_level': '4',
+          'filename': 'kenya-latest.osm.pbf'},
          {'country_name' : 'Libya',
           'region_admin_level': '4',
           'filename': 'libya-latest.osm.pbf'},
@@ -65,6 +66,6 @@ for country in input:
     
     else: 
         print("number of phrases in codebook for {}:{}".format(country_name, len(codebook)))
-        codebook.to_csv(codebook_folder + 'osm_codebook_{}'.format(country_name))
+        codebook.to_csv(codebook_folder + 'osm_codebook_{}.csv'.format(country_name))
 
 
