@@ -48,7 +48,10 @@ codebook_folder = '/home/dylan/open_st_map/country_codebooks/'
 #          'region_admin_level': '6',
 #          'filename': 'romania-latest.osm.pbf'}
 input = [
-    {'country_name' : 'Romania',
+    {'country_name' : 'Poland',
+         'region_admin_level': '4',
+         'filename': 'romania-latest.osm.pbf'},
+    {'country_name' : 'Taiwan',
          'region_admin_level': '4',
          'filename': 'romania-latest.osm.pbf'}
          ]
