@@ -50,10 +50,10 @@ codebook_folder = '/home/dylan/open_st_map/country_codebooks/'
 input = [
     {'country_name' : 'Poland',
          'region_admin_level': '4',
-         'filename': 'romania-latest.osm.pbf'},
+         'filename': 'poland-latest.osm.pbf'},
     {'country_name' : 'Taiwan',
          'region_admin_level': '4',
-         'filename': 'romania-latest.osm.pbf'}
+         'filename': 'taiwan-latest.osm.pbf'}
          ]
 
 for country in input: 
