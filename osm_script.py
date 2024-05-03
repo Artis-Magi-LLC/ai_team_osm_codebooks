@@ -47,11 +47,11 @@ codebook_folder = '/home/dylan/open_st_map/country_codebooks/'
 # {'country_name' : 'Romania',
 #          'region_admin_level': '6',
 #          'filename': 'romania-latest.osm.pbf'}
+    # {'country_name' : 'Poland',
+    #      'region_admin_level': '4',
+    #      'filename': 'poland-latest.osm.pbf'},
 input = [
-    {'country_name' : 'Poland',
-         'region_admin_level': '4',
-         'filename': 'poland-latest.osm.pbf'},
-    {'country_name' : 'Taiwan',
+    {'country_name' : 'Taiwan maritime boundary',
          'region_admin_level': '4',
          'filename': 'taiwan-latest.osm.pbf'}
          ]
