@@ -113,7 +113,7 @@ def create_osm_codebook(country_df, region_admin_level, country_name = '', count
                                 'Sal2Dash': 1, 
                                 'Topic/Type': 'Location', 
                                 'Named Entity': '', 
-                                'Sentiment': 0, 
+                                'Sentiment': 'NEU', 
                                 'Source': '',
                                 'Locality': 2, 
                                 'Meta': '', 
