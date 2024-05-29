@@ -90,20 +90,13 @@ codebook_folder = '/home/dylan/open_st_map/country_codebooks/'
 #     {'country_name' : 'Iran',
 #          'region_admin_level': '4',
 #          'filename': 'iran-latest.osm.pbf',
-#          'no_country_filter': True},
-#     {'country_name' : 'Niger',
-#          'region_admin_level': '4',
-#          'filename': 'niger-latest.osm.pbf',
-#          'no_country_filter':True},
+#          'no_countsry_filter': True},
+# ,
 input = [
-    {'country_name' : 'Czechia',
+    {'country_name' : 'Niger',
          'region_admin_level': '4',
-         'filename': 'czech-republic-latest.osm.pbf',
-          'no_country_filter' :True},
-    {'country_name' : 'Honduras',
-         'region_admin_level': '4',
-         'filename': 'honduras-latest.osm.pbf',
-         'no_country_filter' : True},
+          'filename': 'niger-latest.osm.pbf',
+          'no_country_filter':True},
          ]
 
 for country in input: 
